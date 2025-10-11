@@ -1,66 +1,108 @@
-# Aplicación de Gestión de electrónica (adaptable) y seguimiento para cliente
+# 🔧 Sistema de Gestión y Seguimiento de Reparaciones Electrónicas
 
-Index
+Aplicación web desarrollada para la **gestión de reparaciones electrónicas**, con funcionalidades para **administradores, empleados y clientes**, incluyendo seguimiento en línea, asignación de casos y automatización de notificaciones y pagos.
 
+El sistema es **adaptable a diferentes tipos de servicios técnicos** y está orientado a mejorar la trazabilidad del proceso de reparación en tiempo real.
 
-![screencapture-127-0-0-1-8000-2025-04-28-21_37_04](https://github.com/user-attachments/assets/4e02e15c-7d05-4670-9164-a3e8fc40648e)
+---
 
+## ✨ Funcionalidades principales
 
-Cotización
+- ✅ Registro e inicio de sesión de empleados (con roles)
+- ✅ Panel de administración para **asignar reparaciones**
+- ✅ Seguimiento de cada caso con **historial de estados y comentarios**
+- ✅ Vista personalizada para **empleado** y **cliente**
+- ✅ Sistema de **cotización y aprobación**
+- ✅ Integración de pago con **Stripe**
+- ✅ Notificaciones automáticas con **Brevo (Email API)**
 
-![screencapture-127-0-0-1-8000-cotizacion-2025-04-28-21_38_37](https://github.com/user-attachments/assets/d7c76741-b706-4d2c-8be1-cd4f5df8f2e9)
+---
 
+## 🖼️ Capturas principales
 
-LogIn empleados
+### 🏠 Página de inicio
 
-![screencapture-127-0-0-1-8000-login-2025-04-28-21_39_31](https://github.com/user-attachments/assets/936c7ea7-85ea-425c-bb5d-2262e0a05afb)
+![Index](https://github.com/user-attachments/assets/4e02e15c-7d05-4670-9164-a3e8fc40648e)
 
-Vista Administrador - Asignar casos a empleados
+---
 
-![screencapture-127-0-0-1-8000-asignar-2025-04-28-21_46_39](https://github.com/user-attachments/assets/3853678c-893e-4160-8d80-7c29aa8ca8eb)
+### 📄 Cotización
 
+![Cotización](https://github.com/user-attachments/assets/d7c76741-b706-4d2c-8be1-cd4f5df8f2e9)
 
-Vista empleados
-Perfil
+---
 
+### 🔐 Inicio de sesión (empleados)
 
-![screencapture-127-0-0-1-8000-perfilempleado-2025-04-28-21_47_34](https://github.com/user-attachments/assets/903cefc1-ea11-47ba-9259-aafeec7af5aa)
+![Login empleados](https://github.com/user-attachments/assets/936c7ea7-85ea-425c-bb5d-2262e0a05afb)
 
+---
 
-Reparaciones en proceso asignadas
+### 🛠️ Panel de administrador — Asignar casos
 
-![screencapture-127-0-0-1-8000-reparaciones-2025-04-28-21_47_47](https://github.com/user-attachments/assets/d06c2abf-757d-4888-bca7-076fa7067acb)
+![Asignar casos](https://github.com/user-attachments/assets/3853678c-893e-4160-8d80-7c29aa8ca8eb)
 
+---
 
-Dashboard Index
+### 👤 Vista empleado — Perfil
 
-![screencapture-127-0-0-1-8000-dashboard-2025-04-28-22_20_30](https://github.com/user-attachments/assets/3a250509-c417-4ece-a143-edf5068f3e4d)
+![Perfil](https://github.com/user-attachments/assets/903cefc1-ea11-47ba-9259-aafeec7af5aa)
 
+---
 
-Detalle reparaciones - Ingresar etapa/estado - Historial del dispositivo
+### 📋 Reparaciones asignadas
 
-![screencapture-127-0-0-1-8000-reparaciones-8-detalle-2025-04-28-21_49_33](https://github.com/user-attachments/assets/91272036-1570-4705-a7c0-a26359440832)
+![Reparaciones en proceso](https://github.com/user-attachments/assets/d06c2abf-757d-4888-bca7-076fa7067acb)
 
+---
 
+### 📊 Dashboard general
 
-Seguimiento para cliente en base a ID reparación en vista empleado
-En caso de que el estado sea "pendiente aprobacion", se abren 2 opciones para aceptar o rechazar, dependiendo de esta elección el estado cambio automáticamente
+![Dashboard](https://github.com/user-attachments/assets/3a250509-c417-4ece-a143-edf5068f3e4d)
 
-![screencapture-127-0-0-1-8000-seguimiento-2025-04-28-22_13_21](https://github.com/user-attachments/assets/154e95be-3732-4a92-bc58-8904200e9d61)
+---
 
+### 🔎 Detalle de reparación y actualización de estado
 
-Api de pago Stripe si se aprueba
+![Detalle reparación](https://github.com/user-attachments/assets/91272036-1570-4705-a7c0-a26359440832)
 
-![screencapture-checkout-stripe-c-pay-cs-test-a1hVKZ9805qUMYbSI8hZrT7fkC8ACclZAHslyOm3WuG3adb2Y8Vt5tQllW-2025-04-28-22_14_08](https://github.com/user-attachments/assets/81e1bc57-a8b1-48d1-a1a4-753a4c878da3)
+---
 
+### 👁️ Seguimiento para cliente
 
-Api Brevo para notificar a ciente detalles a través de correo
+> Si el estado está en **pendiente de aprobación**, el cliente puede **aceptar o rechazar** la reparación.
 
-![screencapture-127-0-0-1-8000-reparaciones-8-notificacion-2025-04-28-22_16_06](https://github.com/user-attachments/assets/d61e980f-a9c7-459f-8585-51d03a48e750)
+![Seguimiento cliente](https://github.com/user-attachments/assets/154e95be-3732-4a92-bc58-8904200e9d61)
 
+---
 
-Si cliente paga, el estado cambia de pendiente a "reparación" y se abre una nueva opción, para notificar a cliente una vez esté listo. Esta opción no está disponible antes del pago.
+### 💳 Pago con Stripe
 
-![screencapture-checkout-stripe-c-pay-cs-test-a1hVKZ9805qUMYbSI8hZrT7fkC8ACclZAHslyOm3WuG3adb2Y8Vt5tQllW-2025-04-28-22_14_08](https://github.com/user-attachments/assets/83f9ed3d-7e86-48fe-9c46-89b6465286b3)
+![Pago Stripe](https://github.com/user-attachments/assets/81e1bc57-a8b1-48d1-a1a4-753a4c878da3)
+
+---
+
+### 📬 Notificación por correo (API Brevo)
+
+![Notificación](https://github.com/user-attachments/assets/d61e980f-a9c7-459f-8585-51d03a48e750)
+
+---
+
+### 🔁 Cambio automático de estado tras pago
+
+> Una vez pagado, se habilita la opción para **notificar que el equipo está listo para retiro**.
+
+![Cambio de estado](https://github.com/user-attachments/assets/83f9ed3d-7e86-48fe-9c46-89b6465286b3)
+
+---
+
+Si quieres, puedo agregar:
+
+- 📦 *Instalación y requisitos técnicos (Python/Django/DB)*
+- 🗺️ *Diagrama de flujo del proceso de reparación*
+- 🔌 *Endpoints de API o integración con frontend si aplica*
+
+Dime y lo dejamos aún más completo.
+
 
 
